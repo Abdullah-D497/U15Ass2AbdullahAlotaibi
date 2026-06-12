@@ -5,3 +5,7 @@ function sayHi() {
 function sayBye() {
     alert("Bye!")
 }
+
+function changeBackground() {
+    document.body.style.backgroundColor = "Red";
+}
