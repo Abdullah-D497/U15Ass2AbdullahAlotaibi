@@ -1,9 +1,48 @@
-body {
-
-    background-color: navy;
-    color: darkgrey;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    
+/* Apply to everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Whole website styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0F3F56;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  color: Teal;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: cyan;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Simple layout spacing */
+section {
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
