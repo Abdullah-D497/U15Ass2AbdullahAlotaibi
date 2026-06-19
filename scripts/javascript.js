@@ -6,10 +6,6 @@ function sayBye() {
     alert("Bye!")
 }
 
-function changeBackground() {
-    document.body.style.backgroundColor = "Red";
-}
-
-function changeBackground2() {
-    document.body.style.backgroundColor = "Black";
+function nextPage() {
+    window.location.href=about.html
 }
