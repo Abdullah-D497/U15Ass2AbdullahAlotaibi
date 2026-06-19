@@ -7,5 +7,5 @@ function sayBye() {
 }
 
 function nextPage() {
-    window.location.href="pages.page1"
+    window.location.href="pages/page1"
 }
