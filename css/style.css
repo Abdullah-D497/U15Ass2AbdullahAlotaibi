@@ -1,117 +1,121 @@
-/* ------------------------------
-   GLOBAL PAGE STYLES
---------------------------------*/
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #0c0c0c;
+  color: white;
 }
 
-/* Center all page content */
-h1, p, ul {
-  width: 80%;
-  margin: 20px auto;
-  line-height: 1.6;
-}
-
-/* ------------------------------
-   NAVIGATION BAR
---------------------------------*/
+/* NAVBAR */
 .navbar {
-  background-color: #333;
-  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
+  border-bottom: 1px solid #333;
 }
 
-.navbar ul {
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  color: #aaa;
+}
+
+/* BUTTONS */
+.btn {
+  background: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #008ecc;
+}
+
+/* CARDS */
+.cards {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+.card {
+  background: #111;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #333;
   transition: 0.3s;
 }
 
-.navbar a:hover {
-  color: #ffcc00;
+.card:hover {
+  transform: scale(1.05);
+  border-color: #00bfff;
 }
 
-/* ------------------------------
-   PAGE HEADINGS
---------------------------------*/
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 32px;
-  color: #222;
+.card ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* ------------------------------
-   LISTS
---------------------------------*/
-ul {
-  padding-left: 40px;
-  font-size: 18px;
+.card li {
+  color: #ccc;
+  margin: 10px 0;
 }
 
-/* ------------------------------
-   FORMS (Contact / Membership)
---------------------------------*/
+.price {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+/* FORMS */
 form {
-  width: 80%;
-  margin: 20px auto;
-  background: white;
+  max-width: 400px;
+  margin: auto;
   padding: 20px;
-  border-radius: 8px;
 }
 
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-input, textarea, select {
+input, textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #aaa;
+  margin: 10px 0;
   border-radius: 5px;
-}
-
-button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #333;
-  color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #ffcc00;
-  color: #333;
-}
-
-/* ------------------------------
-   OPTIONAL: CARD STYLE (for trainees or services)
---------------------------------*/
-.card {
-  width: 80%;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }

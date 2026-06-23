@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Hot Beans Web</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Contact</title>
+  ../css/style.css
 </head>
 
 <body>
 
 <nav class="navbar">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="page1.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="membership.html">Membership</a></li>
-    <li><a href="services.html">Services</a></li>
+  <div class="logo">Hot Beans Web</div>
+  <ul class="nav-links">
+    <li>../index.htmlHome</a></li>
+    <li>page1.htmlAbout</a></li>
+    <li>services.htmlServices</a></li>
+    <li>contact.htmlContact</a></li>
+    <li>membership.htmlLogin</a></li>
   </ul>
 </nav>
 
-<h1>Contact Us</h1>
-<p>Email: info@hotbeansweb.com</p>
-<p>Phone: 0161 123 4567</p>
-<p>Address: Manchester, UK</p>
+<div class="hero">
+  <h1>Contact Us</h1>
+</div>
+
+<form>
+  <input type="text" placeholder="Name" required>
+  <input type="email" placeholder="Email" required>
+  <textarea placeholder="Message"></textarea>
+  <button class="btn">Send</button>
+</form>
 
 </body>
 </html>
