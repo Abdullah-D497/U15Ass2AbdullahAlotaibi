@@ -1,48 +1,117 @@
-/* Apply to everything */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Whole website styling */
+/* ------------------------------
+   GLOBAL PAGE STYLES
+--------------------------------*/
 body {
   font-family: Arial, sans-serif;
-  background-color: #0F3F56;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
   color: #333;
 }
 
-/* Headings */
-h1, h2, h3 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-/* Paragraphs */
-p {
-  color: Teal;
-  font-size: 16px;
+/* Center all page content */
+h1, p, ul {
+  width: 80%;
+  margin: 20px auto;
   line-height: 1.6;
-  margin-bottom: 10px;
 }
 
-/* Links */
-a {
-  color: cyan;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Simple layout spacing */
-section {
-  padding: 20px;
+/* ------------------------------
+   NAVIGATION BAR
+--------------------------------*/
+.navbar {
+  background-color: #333;
+  padding: 12px 0;
 }
 
 .navbar ul {
-  display: flex;
-  gap: 20px;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* ------------------------------
+   PAGE HEADINGS
+--------------------------------*/
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 32px;
+  color: #222;
+}
+
+/* ------------------------------
+   LISTS
+--------------------------------*/
+ul {
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+/* ------------------------------
+   FORMS (Contact / Membership)
+--------------------------------*/
+form {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+/* ------------------------------
+   OPTIONAL: CARD STYLE (for trainees or services)
+--------------------------------*/
+.card {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
