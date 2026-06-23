@@ -1,35 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership - Hot Beans Web</title>
+  <title>Membership</title>
   <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: white;
+    }
+
+    .title {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .title h1 {
+      font-size: 40px;
+    }
+
+    .title p {
+      color: #aaa;
+    }
+
+    .login-link {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    /* Cards */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111;
+      padding: 30px;
+      width: 250px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      margin: 10px 0;
+      color: #ccc;
+    }
+
+    .price {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- ✅ NAVBAR -->
 <nav class="navbar">
-  <ul>
+  <div class="logo">Hot Beans Web</div>
+  <ul class="nav-links">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="page1.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="membership.html">Membership</a></li>
     <li><a href="services.html">Services</a></li>
+    <li><a href="page1.html">Jobs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="membership.html" class="btn">Login</a></li>
   </ul>
 </nav>
 
-<h1>Membership</h1>
-<p>Join Hot Beans Web to access exclusive training, developer resources, and job opportunities.</p>
+<!-- ✅ TITLE -->
+<div class="title">
+  <h1>Membership Plans</h1>
+  <p>Choose the subscription that suits your needs at Hot Beans Web.</p>
+  <p>
+    Already have an account?
+    <a href="membership.html" class="login-link">Log in</a>
+  </p>
+</div>
 
-<ul>
-  <li>Access to coding workshops</li>
-  <li>1‑to‑1 mentoring</li>
-  <li>Portfolio reviews</li>
-  <li>Job application support</li>
-</ul>
+<!-- ✅ MEMBERSHIP CARDS -->
+<div class="cards">
+
+  <!-- BASIC -->
+  <div class="card">
+    <h2>Basic</h2>
+    <ul>
+      <li>✔ Access to basic tutorials</li>
+      <li>✔ Community support</li>
+      <li>✔ Limited job listings</li>
+    </ul>
+    <div class="price">£5/month</div>
+    <button class="btn">Subscribe</button>
+  </div>
+
+  <!-- PRO -->
+  <div class="card">
+    <h2>Pro</h2>
+    <ul>
+      <li>✔ All Basic features</li>
+      <li>✔ Premium tutorials</li>
+      <li>✔ Full job access</li>
+    </ul>
+    <div class="price">£10/month</div>
+    <button class="btn">Subscribe</button>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="card">
+    <h2>Premium</h2>
+    <ul>
+      <li>✔ All Pro features</li>
+      <li>✔ 1-to-1 mentoring</li>
+      <li>✔ Priority support</li>
+    </ul>
+    <div class="price">£20/month</div>
+    <button class="btn">Subscribe</button>
+  </div>
+
+</div>
 
 </body>
 </html>
-
-<a href="membership.html" class="btn">Go to Login</a>
+``
