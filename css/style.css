@@ -12,7 +12,6 @@ body {
   align-items: center;
   background: #111;
   padding: 15px 30px;
-  border-bottom: 1px solid #333;
 }
 
 .logo {
@@ -23,41 +22,35 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
-.nav-links a {
+.nav-links li a {
   color: white;
   text-decoration: none;
 }
 
-.nav-links a:hover {
+.nav-links li a:hover {
   color: #00bfff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
 }
 
 .hero p {
   color: #aaa;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
   background: #00bfff;
   color: white;
   padding: 10px 20px;
-  border: none;
-  cursor: pointer;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 5px;
   display: inline-block;
   margin-top: 10px;
 }
@@ -77,17 +70,11 @@ body {
 
 .card {
   background: #111;
-  padding: 25px;
-  width: 260px;
-  text-align: center;
+  padding: 20px;
+  width: 250px;
   border-radius: 10px;
+  text-align: center;
   border: 1px solid #333;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  border-color: #00bfff;
 }
 
 .card ul {
@@ -96,20 +83,19 @@ body {
 }
 
 .card li {
-  color: #ccc;
   margin: 10px 0;
+  color: #ccc;
 }
 
 .price {
-  font-size: 22px;
   margin: 15px 0;
+  font-size: 20px;
 }
 
-/* FORMS */
+/* FORM */
 form {
   max-width: 400px;
   margin: auto;
-  padding: 20px;
 }
 
 input, textarea {
