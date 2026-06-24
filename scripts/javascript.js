@@ -1,3 +1,3 @@
 function sayWelcome() {
-    alert(Welcome)
+    alert("Welcome")
 }
