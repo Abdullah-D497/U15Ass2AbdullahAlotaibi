@@ -1,8 +1,14 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #0c0c0c;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ---------- NAVBAR ---------- */
@@ -38,7 +44,7 @@ body {
   color: #00bfff;
 }
 
-/* ---------- HERO SECTION ---------- */
+/* ---------- HERO ---------- */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -48,16 +54,7 @@ body {
   color: #aaa;
 }
 
-/* Image styling (for About page) */
-.hero img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
-  border: 2px solid #333;
-}
-
-/* ---------- BUTTONS ---------- */
+/* ---------- BUTTON ---------- */
 .btn {
   background: #00bfff;
   color: white;
@@ -66,7 +63,7 @@ body {
   border-radius: 5px;
   display: inline-block;
   margin-top: 10px;
-  transition: background 0.3s, transform 0.2s;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -90,7 +87,7 @@ body {
   border-radius: 10px;
   text-align: center;
   border: 1px solid #333;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -98,19 +95,20 @@ body {
   box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
 }
 
-.card ul {
-  list-style: none;
-  padding: 0;
+/* ---------- TEAM IMAGES ---------- */
+.team-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.card li {
-  margin: 10px 0;
-  color: #ccc;
-}
-
-.price {
-  margin: 15px 0;
-  font-size: 20px;
+.team-images img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 /* ---------- FORMS ---------- */
@@ -140,8 +138,8 @@ input:focus, textarea:focus {
   color: #ccc;
   text-align: center;
   padding: 20px;
-  margin-top: 50px;
   border-top: 1px solid #333;
+  margin-top: auto;
 }
 
 .footer a {
@@ -163,11 +161,10 @@ p {
   line-height: 1.6;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
-    gap: 10px;
     text-align: center;
   }
 
