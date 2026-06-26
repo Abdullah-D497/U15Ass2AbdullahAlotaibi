@@ -8,18 +8,7 @@
 
 <body>
 
-  <!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 Hot Beans Web</p>
-  <div>
-    <a href="../index.html">Home</a> |
-    <a href="page1.html">About</a> |
-    <a href="services.html">Services</a> |
-    <a href="contact.html">Contact</a>
-  </div>
-  <p>Email: info@hotbeans.com</p>
-</footer>
-
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">Hot Beans</div>
   <ul class="nav-links">
@@ -31,19 +20,36 @@
   </ul>
 </nav>
 
-<div class="hero">
-  <a href="membership.html" class="btn">Memberships</a>
-  <h1>Contact Us</h1>
-</div>
+<!-- MAIN CONTENT -->
+<main>
 
-<form onsubmit="return validateForm()">
-  <input type="text" id="name" placeholder="Enter Name">
-  <input type="email" id="email" placeholder="Enter Email">
-  <input type="text" id="message" placeholder="Enter Message">
-  <button type="submit">Submit</button>
-</form>
+  <div class="hero">
+    <a href="membership.html" class="btn">Memberships</a>
+    <h1>Contact Us</h1>
+  </div>
 
-<p id="message"></p>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="text" id="userMessage" placeholder="Enter Message">
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="responseMessage"></p>
+
+</main>
+
+<!-- ✅ FOOTER AT THE BOTTOM -->
+<footer class="footer">
+  <p>© 2026 Hot Beans Web</p>
+  <div>
+    <a href="../index.html">Home</a> |
+    <a href="page1.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>Email: info@hotbeans.com</p>
+</footer>
 
 </body>
 </html>
