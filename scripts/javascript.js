@@ -14,3 +14,8 @@ function validateForm() {
     return true;
   }
 }
+
+function subscribe(plan) {
+  alert("You have successfully subscribed to the " + plan + " plan!");
+}
+``
