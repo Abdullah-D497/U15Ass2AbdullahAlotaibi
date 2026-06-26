@@ -6,7 +6,7 @@ function validateForm() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
 
-  if (name === "" || email === "") {
+  if (name === "" || email === "" || message === "") {
     document.getElementById("message").innerHTML = "Please fill all fields!";
     return false;
   } else {
