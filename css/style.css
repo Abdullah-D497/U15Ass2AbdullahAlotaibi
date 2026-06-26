@@ -100,3 +100,22 @@ input, textarea {
   border-radius: 5px;
   border: none;
 }
+
+.footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #333;
+}
+
+.footer a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

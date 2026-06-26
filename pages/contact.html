@@ -24,12 +24,13 @@
   <h1>Contact Us</h1>
 </div>
 
-<form>
-  <input type="text" placeholder="Name" required>
-  <input type="email" placeholder="Email" required>
-  <textarea placeholder="Message"></textarea>
-  <button class="btn">Send</button>
+<form onsubmit="return validateForm()">
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="email" id="email" placeholder="Enter Email">
+  <button type="submit">Submit</button>
 </form>
+
+<p id="message"></p>
 
 </body>
 </html>
